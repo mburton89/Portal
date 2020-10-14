@@ -27,10 +27,10 @@ public class MyPortalGun : MonoBehaviour
     void FirePortal(bool isOrange)
     {
         // struct object that will hold our raycast information
-        RaycastHit hit;
+        RaycastHit raycastHit;
 
         // if we collide with an object with our raycast, spawn a portal there
-        if (Physics.Raycast(firingPoint.transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+        if (Physics.Raycast(firingPoint.transform.position, transform.TransformDirection(Vector3.forward), out raycastHit, Mathf.Infinity))
         {
             portalSound.Play();
 
@@ -40,11 +40,11 @@ public class MyPortalGun : MonoBehaviour
                 // set the portal to the same position as the raycast point, and set
                 // its rotation to orient to the wall relative to what its "up" direction is,
                 // which is Vector.up in world space 
-                orangePortal.transform.SetPositionAndRotation(hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                orangePortal.transform.SetPositionAndRotation(raycastHit.point, Quaternion.FromToRotation(Vector3.forward, raycastHit.normal));
             }
             else
             {
-                bluePortal.transform.SetPositionAndRotation(hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+                bluePortal.transform.SetPositionAndRotation(raycastHit.point, Quaternion.FromToRotation(Vector3.forward, raycastHit.normal));
             }
         }
         else
