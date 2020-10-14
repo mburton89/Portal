@@ -34,7 +34,8 @@ public class Portal : MonoBehaviour
 		float xRot = objectTransform.rotation.x;
 		float zRot = objectTransform.rotation.z;
 
-		//TODO Actually teleport the player...set the player's position and rotation to the other portal's
+		//Actually teleport the player...set the player's position and rotation to the other portal'
+		objectTransform.SetPositionAndRotation(linkedPortal.transform.position, linkedPortal.transform.parent.transform.rotation);
 
 		// Y rotation from portal
 		float yRot = objectTransform.eulerAngles.y;
