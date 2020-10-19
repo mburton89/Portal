@@ -286,8 +286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalSound: {fileID: 1513232367}
   errorSound: {fileID: 1151091781}
-  orangePortal: {fileID: 1192648863936130252}
-  bluePortal: {fileID: 167378226}
+  orangePortal: {fileID: 1451796749}
+  bluePortal: {fileID: 214272504}
   firingPoint: {fileID: 1631801672}
 --- !u!1 &167378226
 GameObject:
@@ -540,7 +540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440163268}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.03}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 828698935}
@@ -3483,7 +3483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913226873816702613}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.03}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4881026816310617558}
