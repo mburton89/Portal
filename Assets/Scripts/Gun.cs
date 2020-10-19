@@ -6,8 +6,13 @@ public class Gun : MonoBehaviour
 {
     public AudioSource portalSound;
     public AudioSource errorSound;
+<<<<<<< HEAD
     public GameObject bluePortal;
     public GameObject orangePortal;
+=======
+    public GameObject orangePortal;
+    public GameObject bluePortal;
+>>>>>>> matt-10-19-2020-class-setup
     public Transform firingPoint;
 
     void Update()
@@ -32,6 +37,7 @@ public class Gun : MonoBehaviour
 
             if (isOrange)
             {
+<<<<<<< HEAD
                 //Fire Orange Portal
                 orangePortal.transform.SetPositionAndRotation(raycastHit.point, Quaternion.FromToRotation(Vector3.forward, raycastHit.normal));
             }
@@ -42,6 +48,18 @@ public class Gun : MonoBehaviour
             }
         }
         else
+=======
+                print("ORANGE");
+                orangePortal.transform.SetPositionAndRotation(raycastHit.point, Quaternion.FromToRotation(Vector3.forward, raycastHit.normal));
+            }
+            else
+            {
+                print("BLUE");
+                bluePortal.transform.SetPositionAndRotation(raycastHit.point, Quaternion.FromToRotation(Vector3.forward, raycastHit.normal));
+            }
+        }
+        else
+>>>>>>> matt-10-19-2020-class-setup
         {
             errorSound.Play();
         }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f98fbc1e5402d4168919e876548c754e
+=======
+guid: 0c1a2b58e15ec4e18851d4d095ba8869
+>>>>>>> matt-10-19-2020-class-setup
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

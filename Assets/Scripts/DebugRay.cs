@@ -8,6 +8,6 @@ public class DebugRay : MonoBehaviour
 	void Update ()
 	{
 		// simply draws a ray going from a point in a direction
-		Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.red);
+		Debug.DrawRay(transform.position, transform.TransformVector(Vector3.forward) * 1000, Color.red);
     }
 }

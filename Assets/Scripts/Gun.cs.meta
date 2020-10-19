@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a45fb73cdea974c1899a6e66db704336
+=======
+guid: c6187f6f9b03548a598f2098b926479b
+>>>>>>> matt-10-19-2020-class-setup
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
