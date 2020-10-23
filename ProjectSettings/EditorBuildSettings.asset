@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 397b041ac3d43d84f822259181bcbaf2,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5db16ff2f51a38d4c84195a97139ad80,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 6c75920ea9acc304c8cd579850feb4b6,
+      type: 2}
